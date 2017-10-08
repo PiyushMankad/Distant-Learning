@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+
+
+<style>
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #002236 url(images/img01.gif) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #181B20;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	color: #2483A6;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #2483A6;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img.border {
+	border: 6px solid #EEE7DF;
+}
+
+img.alignleft {
+	float: left;
+	margin-right: 25px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/img03.gif) no-repeat center top;
+}
+
+/* Header */
+
+#header-wrapper {
+	height: 167px;
+	background: url(images/img02.gif) no-repeat center top;
+}
+
+#header {
+	width: 960px;
+	height: 167px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	width: 980px;
+	margin: 0px auto;
+	padding: 40px 0px 0px 0px;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	margin: 0px;
+	letter-spacing: -1px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 54px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+}
+
+#logo p {
+	margin-top: -10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 100px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 60px 0 0 30px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 195px;
+	padding: 6px 10px;
+	border: none;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #7F7F81;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu-wrapper {
+	background: url(images/img03.gif) no-repeat center top;
+	height: 58px;
+}
+
+#menu {
+	width: 940px;
+	height: 58px;
+	margin: 0px auto;
+	padding: 0px 20px 0px 20px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 56px;
+	margin: 0px;
+	padding: 0px 30px 0px 30px;
+	line-height: 56px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #B5B5B5;
+	border: none;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	background: url(images/img05.gif) repeat-y center top;
+}
+
+#page-bgtop {
+	background: url(images/img04.gif) no-repeat center top;
+}
+
+#page-bgbtm {
+	overflow: hidden;
+	padding: 40px 30px 0px 30px;
+	background: url(images/img06.gif) no-repeat center bottom;
+}
+
+#page-content {
+	width: 920px;
+	margin: 0px auto;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 610px;
+	padding: 0px 0px 0px 0px;
+}
+
+.post {
+	clear: both;
+	padding-bottom: 10px;
+}
+
+.post .title {
+	padding-top: 10px;
+	letter-spacing: -2px;
+}
+
+.post .title a {
+	color: #2483A6;
+	border: none;
+}
+
+.post .meta {
+	padding-bottom: 10px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	text-align: justify;
+	margin-bottom: 25px;
+	padding: 10px 0px 0px 0px;
+}
+
+.links {
+	display: block;
+	width: 96px;
+	padding: 2px 0px 2px 0px;
+	background: #A53602;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 230px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 15px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	line-height: 35px;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar li li a {
+	color: #181B20;
+}
+
+#sidebar h2 {
+	height: 38px;
+	margin-bottom: 20px;
+	padding: 12px 0 0 15px;
+	border-bottom: 1px dashed #B3B0B0;
+	letter-spacing: -1px;
+	font-size: 24px;
+	color: #2483A6;
+}
+
+#sidebar p {
+	margin: 0 0px;
+	padding: 0px 20px 20px 20px;
+	text-align: justify;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	width: 960px;
+	height: 55px;
+	margin: 0px auto 40px auto;
+	background: url(images/img07.gif) no-repeat center top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 18px;
+	line-height: normal;
+	text-align: center;
+	color: #576475;
+}
+
+#footer a {
+	color: #576475;
+}
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">BRANCHES</a></h1>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<!-- end #menu -->
+<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#College_Of_Engineering_Studies_.28CoES.29">College of Engineering Studies </a></h2>
+							<p class="meta">&nbsp;</p>
+							<div class="entry">
+							  <p>The College of Engineering Studies offers B.Tech, M.Tech and Ph.D. programs across a wide spectrum of specialization areas. These include <a href="https://en.wikipedia.org/wiki/Petroleum_Engineering" title="Petroleum Engineering">Petroleum Engineering</a>, <a href="https://en.wikipedia.org/wiki/Chemical_Engineering" title="Chemical Engineering">Chemical Engineering</a>, <a href="https://en.wikipedia.org/wiki/Hydrocarbon_exploration" title="Hydrocarbon exploration">Petroleum Exploration</a>, <a href="https://en.wikipedia.org/wiki/Electric_power_system" title="Electric power system">Energy Systems</a>, <a href="https://en.wikipedia.org/wiki/Geoinformatics" title="Geoinformatics">Geoinformatics</a> Engineering, Geo-Science Engineering, <a href="https://en.wikipedia.org/wiki/Automotive_engineering" title="Automotive engineering">Automotive Design Engineering</a>, <a href="https://en.wikipedia.org/wiki/Mining_engineering" title="Mining engineering">Mining engineering</a>, Instrumentation &amp; Process Control, <a href="https://en.wikipedia.org/wiki/Aerospace_Engineering" title="Aerospace Engineering">Aerospace Engineering</a>, <a href="https://en.wikipedia.org/wiki/Emergency_management" title="Emergency management">Disaster Management</a>, <a href="https://en.wikipedia.org/wiki/Mechatronics" title="Mechatronics">Mechatronics Engineering</a>, Robotics, <a href="https://en.wikipedia.org/wiki/Nanotechnology" title="Nanotechnology">Nanotechnology</a>, Fire Safety Engineering, Electrical Engineering, Civil Engineering, Industrial Engineering, and several others.</p>
+								<p>The College of Engineering Studies has the following Departments:</p>
+								<ul>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Petroleum_Engineering" title="Petroleum Engineering">Petroleum Engineering</a> and <a href="https://en.wikipedia.org/wiki/Earth_Sciences" title="Earth Sciences">Earth Sciences</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Chemical_Engineering" title="Chemical Engineering">Chemical Engineering</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Mechanical_Engineering" title="Mechanical Engineering">Mechanical Engineering</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Electrical_Engineering" title="Electrical Engineering">Electrical Engineering</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Aerospace_Engineering" title="Aerospace Engineering">Aerospace Engineering</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Nuclear_physics" title="Nuclear physics">Nuclear Science Technology</a></li>
+								  <li>Department of Health, Safety and Environment</li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Electronic_engineering" title="Electronic engineering">Electronics &amp; Instrumentation Engineering</a></li>
+								  <li>Department of <a href="https://en.wikipedia.org/wiki/Civil_Engineering" title="Civil Engineering">Civil Engineering</a></li>
+							  </ul>
+								<p>.</p>
+						  </div>
+						</div>
+						<div class="post">
+							<h2 class="title"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#College_Of_Management_and_Economics_Studies_.28CoMES.29">College of management studies </a></h2>
+							<p class="meta">&nbsp;</p>
+							<div class="entry">
+								<p>The College of Management &amp; Economics Studies is situated at Kandoli Campus of UPES which offers BBA, MBA &amp; Ph.D. programs in varied domains such as Oil &amp; Gas, Aerospace, Power, Infrastructure, Transportation &amp; Logistics, Aviation, Information Technology, Information Systems and International Business.It allows the students to understand sector specific business and economic concepts; empowering them with management and leadership skills.</p>
+						  </div>
+						</div>
+						<div class="post">
+							<h2 class="title"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#College_Of_Legal_Studies_.28CoLS.29">College of legal studies </a></h2>
+							<p class="meta">&nbsp;</p>
+							<div class="entry">
+								<p>It offers basic and specialized law courses in Corporate Law, Energy Specialization, Taxation Laws and Technical courses like Intellectual Property Rights and Cyber Law and integrated and specialized programs which are the first of their kind in the South Asian region. These include BA LLB with specialization in Energy Laws, BBA LLB (Hons) Corporate Law and B.Com + LLB with specialization in Taxation Laws and B.Tech Energy Technology + LLB with specialization in Intellectual Property Rights and B. Tech Computer Science &amp; Engineering with specialization in Cyber Laws.</p>
+						  </div>
+						</div>
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<li>
+								<h2><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#School_Of_Design_Studies_.28SoDS.29">SCHOOL OF DESIGN STUDIES</a> </h2>
+								<p>School of Design Studies provides creative design courses that help students understand and master visual design aspects of transportation, industrial and product development and build a successful career in the industry of various choice</p>
+							</li>
+							<li>
+							  <h3><span id="School_of_International_Law_.26_Diplomacy_.28SoILD.29"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#School_of_International_Law_.26_Diplomacy_.28SoILD.29">School of International Law &amp; Diplomacy (SoILD)</a></span></h3>
+							  <ul>
+							    <li>School of International Law &amp; Diplomacy (SoILD) at UPES has been set up with a vision to groom leaders ready to address challenges in the national and international arena across setup.</li>
+								</ul>
+							</li>
+							<li>
+							  <h3><span id="School_of_Planning_.26_Architecture_.28SPA.29"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#School_of_Planning_.26_Architecture_.28SPA.29">School of Planning &amp; Architecture (SPA)
+							  </a></span></h3>
+							  <ul>
+							    <li>UPES School of Planning and Architecture provides cutting edge B.Plan and M.Plan program that aims to develop multi-dimensional capabilities in the student.</li>
+								</ul>
+							</li>
+							<li>
+							  <h3><span id="School_of_Computer_Science_.26_Engineering_.28SoCSE.29"><a href="https://en.wikipedia.org/wiki/University_of_Petroleum_and_Energy_Studies#School_of_Computer_Science_.26_Engineering_.28SoCSE.29">School of Computer Science &amp; Engineering (SoCSE)</a></span></h3>
+							  <ul>
+							    <li>The School of Computer Science &amp; Engineering offers B.Tech <a href="https://en.wikipedia.org/wiki/Computer_Science" title="Computer Science">Computer Science</a> &amp; Engineering in association with <a href="https://en.wikipedia.org/wiki/IBM" title="IBM">IBM</a> &amp; <a href="https://en.wikipedia.org/w/index.php?title=XEBIA&amp;action=edit&amp;redlink=1" title="XEBIA (page does not exist)">XEBIA</a> with various specialization.</li>
+								</ul>
+							</li>
+						</ul>
+				  </div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+  </div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">FCT</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

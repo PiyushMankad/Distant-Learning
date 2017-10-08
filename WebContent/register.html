@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style type="text/css">
+h3{font-family: Calibri; font-size: 22pt; font-style: normal; font-weight: bold; color:"#000000";
+text-align: center; text-decoration: underline }
+table{font-family: Calibri; color:white; font-size: 11pt; font-style: normal;
+text-align:; background-color: ; border-collapse: collapse; border: 2px solid navy}
+table.inner{border: 0px}
+</style>
+</head>
+ 
+<body background="aa.jpg">
+
+
+<h3>STUDENT REGISTRATION FORM</h3>
+<form action="RegServlet" method="POST">
+ 
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="first" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="last" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH</td>
+ <td>
+<input type="date" name="dob">
+</td>
+</tr>
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+ 
+<!----- Username ---------------------------------------------------------->
+<tr>
+<td>Username</td>
+<td>
+<input type="text" name="uname" maxlength="20" />
+(max. 20 characters)
+</td>
+</tr>
+<!----- Password ------------------------------------------------------------->
+<tr>
+<td>Password</td>
+<td>
+<input type="password" name="pwd">
+(min. 5 characters recommended)
+</td>
+</tr>
+<!----- Contact---------------------------------------------------------->
+<tr>
+<td>Contact</td>
+<td><input type="number" name="contact"></td>
+</tr>
+ 
+<!----- Course ---------------------------------------------------------->
+<tr>
+<td>COURSES<br/>APPLIED FOR</td>
+<td>Cloud Computing
+  <input type="radio" name="course" value="CLOUD">
+  Big Data (Hadoop) 
+  <input type="radio" name="course" value="BIG DATA">
+  Java
+  <input type="radio" name="course" value="JAVA">
+  .NET
+  <input type="radio" name="course" value=".NET">
+  PHP
+  <input type="radio" name="course" value="PHP">
+  
+ 
+</td>
+</tr>
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
